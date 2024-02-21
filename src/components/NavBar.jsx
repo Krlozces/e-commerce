@@ -55,9 +55,9 @@ export default function NavBar() {
                             </button>
                         </div>
                         <div className=''>
-                            <button type='button'>
+                            <NavLink to="/cart">
                                 <FontAwesomeIcon icon={faCartShopping} />
-                            </button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
