@@ -1,7 +1,14 @@
 import Slider from "react-slick";
 import Card from "./Card";
-import images from '../../public/images.json'
+import images from '../../public/images.json';
+import { useState } from 'react';
 export default function CardSection() {
+    const [cart, setCart] = useState([]);
+
+    const addToCart = (el) => {
+        setCart([...cart, el]);
+    };
+    
     const settings = {
         dots: true,
         infinite: true,
@@ -18,7 +25,7 @@ export default function CardSection() {
             <Slider {...settings} className="w-[90%] mx-auto">
                 {images.images.map((card) => (
                     <a href="" key={card.id} className="hover:border hover:border-black">
-                        <Card title={card.title} description={card.description} precio={card.price} image={card.image} />
+                        <Card title={card.title} description={card.description} precio={card.price} image={card.image} onClick={() => addToCart(card)} />
                     </a>
                 ))}
             </Slider>
