@@ -4,6 +4,17 @@ export const DataContext = createContext();
 export const DataProvider = ({ children }) => {
     const [items, setItems] = useState([]);
     const [cart, setCart] = useState([]);
+    const [cartTotal, setCartTotal] = useState(0);
+
+    const addToCart = (el) => {
+        setCart((prevCart) => [...prevCart, el]);
+    };
+
+    const removeFromCart = (el) => {
+        let hardCopy = [...cart];
+        hardCopy = hardCopy.filter((cartItem) => cartItem.id !== el.id);
+        setCart(hardCopy);
+    }
         
     useEffect(() => {
         const fetchData = async () => {
@@ -21,7 +32,7 @@ export const DataProvider = ({ children }) => {
 
     return(
         <>
-        <DataContext.Provider value={{ items, setItems, cart, setCart }}>
+        <DataContext.Provider value={{ items, setItems, cart, setCart, cartTotal, setCartTotal, addToCart, removeFromCart }}>
             {children}
         </DataContext.Provider>
         </>
