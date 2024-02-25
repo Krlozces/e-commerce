@@ -28,7 +28,7 @@ export default function Cart() {
                         <ul className="list-disc ml-8 w-64">
                             <li className="flex justify-between py-2">
                                 <p className="text-left">Precio con IGV</p>
-                                <span className="text-right">{0}</span>
+                                <span className="text-right">S/. {cartTotal + ((cartTotal*18)/100)}</span>
                             </li>
                             <li className="flex justify-between py-2">
                                 <p>Opciones añadidas</p>
@@ -39,23 +39,23 @@ export default function Cart() {
                                 <span>{0}</span>
                             </li>
                             <li className="flex justify-between py-2">
-                                <p>Descuento de envío</p>
-                                <span>{0}</span>
+                                <p className="text-red-400">Descuento de envío</p>
+                                <span className="text-red-400">{0}</span>
                             </li>
                             <li className="flex justify-between py-2">
-                                <p>Descuentos de la orden</p>
-                                <span>{0}</span>
+                                <p className="text-red-400">Descuentos de la orden</p>
+                                <span className="text-red-400">{0}</span>
                             </li>
                             <li className="flex justify-between py-2">
                                 <p>IGV(18%)</p>
-                                <span>{0}</span>
+                                <span>S/. {(cartTotal*18)/100}</span>
                             </li>
                         </ul>
                         <hr />
                         <ul>
                             <li className="text-black font-bold flex justify-between p-4">
                                 <p >Total de la orden</p>
-                                <span>{cartTotal}</span>
+                                <span>S/. {cartTotal + ((cartTotal*18)/100)}</span>
                             </li>
                         </ul>
                         <hr />
