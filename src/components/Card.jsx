@@ -1,6 +1,7 @@
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-export default function Card({  title, description, precio, image }) {
+export default function Card({  title, description, precio, image, handlerOnClick, val }) {
+    
     return (
         <>
             <div className="max-w-sm relative overflow-hidden bg-gray-400 mx-2">
@@ -11,7 +12,7 @@ export default function Card({  title, description, precio, image }) {
                         {description}
                     </p>
                     <div className='flex justify-end'>
-                        <button className="px-6 py-2 bg-slate-200 rounded hover:bg-slate-400" type="button">Add to cart</button>
+                        <button className="px-6 py-2 bg-slate-200 rounded hover:bg-slate-400" type="button" onClick={handlerOnClick}>{val}</button>
                     </div>
                 </div>
                 <span className="absolute top-52 mx-2 my-4 py-2 px-4 bg-slate-200 rounded"> S/.{precio} </span>
