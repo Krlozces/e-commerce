@@ -24,10 +24,10 @@ export default function ShoppingCart() {
     return (
         <>
             <h2 className="font-bold text-2xl text-center my-4">Carrito de compras</h2>
-            <div className="flex justify-between">
+            <div className="flex justify-between flex-wrap">
                 {cart && cart.length > 0 ? (
                     cart.map((cartItem) => (
-                        <div key={cartItem.id}>
+                        <div key={cartItem.id} className="w-[280px]">
                             <Card
                                 title={cartItem.title}
                                 description={cartItem.description}
@@ -39,7 +39,7 @@ export default function ShoppingCart() {
                         </div>
                     ))
                 ) : (
-                    <p className="text-center">Tu carrito está vacío</p>
+                    <p className="text-center font-semibold">Tu carrito está vacío</p>
                 )}
             </div>
         </>
