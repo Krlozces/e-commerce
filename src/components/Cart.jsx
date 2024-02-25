@@ -3,7 +3,10 @@ import ShoppingCart from "./ShoppingCart";
 import Header from "./Header";
 import Footer from "./Footer";
 import { NavLink } from "react-router-dom";
+import { DataContext } from "./DataContext";
+import { useContext } from "react";
 export default function Cart() {
+    const { cartTotal, setCartTotal } = useContext(DataContext);
     return (
         <>
             <Header />
@@ -52,7 +55,7 @@ export default function Cart() {
                         <ul>
                             <li className="text-black font-bold flex justify-between p-4">
                                 <p >Total de la orden</p>
-                                <span>{0}</span>
+                                <span>{cartTotal}</span>
                             </li>
                         </ul>
                         <hr />
