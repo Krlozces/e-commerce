@@ -4,18 +4,18 @@ export default function Footer() {
     return (
         <>
             <div className="bg-black py-4 w-full">
-                <ul className="list-none flex text-slate-400 font-thin justify-evenly">
+                <ul className="list-none lg:flex text-slate-400 font-thin lg:justify-evenly sm:flex sm:flex-wrap">
                     <li className="p-4">
-                        <a href="#" className="border-r px-4 hover:text-slate-200">Comunícate con Nosotros</a>
+                        <a href="#" className="lg:border-r px-4 hover:text-slate-200">Comunícate con Nosotros</a>
                     </li>
                     <li className="p-4">
-                        <a href="#" className="border-r px-4 hover:text-slate-200">Nuestros Datos</a>
+                        <a href="#" className="lg:border-r px-4 hover:text-slate-200">Nuestros Datos</a>
                     </li>
                     <li className="p-4">
-                        <a href="#" className="border-r px-4 hover:text-slate-200">Términos y Condiciones</a>
+                        <a href="#" className="lg:border-r px-4 hover:text-slate-200">Términos y Condiciones</a>
                     </li>
                     <li className="p-4">
-                        <a href="#" className="border-r px-4 hover:text-slate-200">Política de Privacidad</a>
+                        <a href="#" className="lg:border-r px-4 hover:text-slate-200">Política de Privacidad</a>
                     </li>
                     <li className="p-4">
                         <a href="#" className="px-4 hover:text-slate-200">Preguntas Frecuentes</a>
