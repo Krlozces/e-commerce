@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import Card from "./Card";
 import images from '../../public/images.json';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { DataContext } from "./DataContext";
 export default function CardSection() {
     const { cart, addToCart } = useContext(DataContext);
