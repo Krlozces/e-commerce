@@ -5,33 +5,34 @@ import { NavLink } from 'react-router-dom';
 export default function NavBar() {
     return (
         <>
-            <nav className="w-full navbar navbar-expand-lg navbar-light bg-light flex justify-around">
+            <nav className="w-full navbar navbar-expand-lg navbar-light bg-light flex justify-around flex-col sm:flex-row items-center">
                 <div>
                     <NavLink to="/" className="nav-link"><img src={logo} alt="Logo" width={100} height={75} /></NavLink>
                 </div>
-                <ul className='list-none flex justify-between items-center'>
-                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400'>
+                {/* revisar para hacerlo responsive */}
+                <ul className='list-none flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between items-center mb-4 sm:mb-0'>
+                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400 sm:mx-2'>
                         <a href="#" className='font-bold'>HOMBRE</a>
                     </li>
-                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400'>
+                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400 sm:mx-2'>
                         <a href="#" className='font-bold'>MUJER</a>
                     </li>
-                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400'>
+                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400 sm:mx-2'>
                         <a href="#" className='font-bold'>NIÑOS</a>
                     </li>
-                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400'>
+                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400 sm:mx-2'>
                         <a href="#" className='font-bold'>PERSONALIZAR</a>
                     </li>
-                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400'>
+                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400 sm:mx-2'>
                         <a href="#" className='font-bold'>LANZAMIENTOS</a>
                     </li>
-                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400'>
+                    <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400 sm:mx-2'>
                         <a href="#" className='font-bold'>DESCUENTOS</a>
                     </li>
                 </ul>
-                <div className='flex justify-between items-center'>
+                <div className='flex flex-col sm:flex-row justify-between items-center'>
                     <form action="#" method="post">
-                        <div className='relative'>
+                        <div className='relative mb-4 sm:mb-0'>
                             <label htmlFor="search-input"></label>
                             <input type="text" name="search-input" id="search-input" placeholder='Buscar' className='rounded border-slate-400 px-4 py-2 bg-gray-100 focus:outline-none'/>
                             <div className='absolute pin-r pin-t mt-3 mr-4 right-0 top-0 text-slate-900'>
