@@ -31,8 +31,8 @@ export default function CardSection() {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     infinite: true
                 }
             },
@@ -63,13 +63,13 @@ export default function CardSection() {
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <div className={className} style={{ ...style, display: "block", background: "red" }} onClick={onClick}/>
+        <div className={className} style={{ ...style, display: "block", background: "red", marginRight:2 }} onClick={onClick}/>
     );
 }
 
 function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <div className={className} style={{ ...style, display: "block", background: "black" }} onClick={onClick}/>
+        <div className={className} style={{ ...style, display: "block", background: "black", margin:0 }} onClick={onClick}/>
     );
 }
