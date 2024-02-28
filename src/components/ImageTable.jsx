@@ -20,7 +20,7 @@ export default function ImageTable() {
     ];
     return (
         <>
-            <div className="grid grid-cols-8 grid-rows-[repeat(4,minmax(110px,_1fr))] grid-flow-row gap-2 my-4">
+            <div className="hidden lg:grid lg:grid-cols-8 grid-rows-[repeat(4,minmax(110px,_1fr))] grid-flow-row gap-2 my-4">
                 <div className="col-span-4 row-span-4 bg-no-repeat bg-cover bg-center rounded" style={{ backgroundImage: `url(${Sneaker02})`  }}></div>
 
                 <ImagesCarrousel setOfImages = { images }/>
