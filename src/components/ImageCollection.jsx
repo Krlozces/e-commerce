@@ -12,7 +12,7 @@ export default function ImageCollection() {
                 <div className="col-span-2 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${Sneaker03})` }}></div>
                 <div className="col-span-2 row-start-2 col-start-5 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${Sneaker04})` }}></div>
                 <div className="col-span-2 row-span-2 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${Sneaker})` }}></div>
-                <a href="#" className="absolute top-64 right-96 z-10 bg-white rounded py-2 px-4 font-semibold">DESCUBRE MÁS</a>
+                <a href="#" className="absolute top-64 left-48 mx-auto lg:left-1/2 z-10 text-center bg-white rounded py-2 px-4 font-semibold">DESCUBRE MÁS</a>
             </div>
             
         </>
