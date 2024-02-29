@@ -3,6 +3,7 @@ import Card from "./Card";
 import images from '../../public/images.json';
 import { useContext } from 'react';
 import { DataContext } from "./DataContext";
+import { NavLink } from "react-router-dom";
 export default function CardSection() {
     const { cart, addToCart } = useContext(DataContext);
     
@@ -51,9 +52,9 @@ export default function CardSection() {
             {/* Iteramos a través de los objetos y utilizamos sus atributos con el componente Card */}
             <Slider {...settings} className="w-[90%] mx-auto">
                 {images.images.map((card) => (
-                    <a href="#" key={card.id} className="hover:border hover:border-black">
+                    <NavLink to={`/product/${card.id}`} key={card.id} className="hover:border hover:border-black">
                         <Card title={card.title} description={card.description} precio={card.price} image={card.image} handlerOnClick={(e) => { e.preventDefault(); handleAddToCart(card); }} val={"Add to cart"}/>
-                    </a>
+                    </NavLink>
                 ))}
             </Slider>
         </>    
