@@ -27,7 +27,8 @@ export default function Product() {
                                     <span className="font-bold">Precio:</span> S/. {item.price}
                                 </p>
                             </div>
-                        </div> : null)}  
+                        </div> : null
+                    )}  
                 </div>
             </div>
             <Footer />
