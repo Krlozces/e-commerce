@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Cart from './components/Cart';
 import Product from './components/Product';
 import { DataProvider } from './components/DataContext';
+import GridSection from './components/GridSection';
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/cart"  element={<Cart />} />
               <Route path="/product/:nombreParam" element={<Product />} />
+              <Route path='/shop/:nombreParam' element={<GridSection />} />
               {/* <Route path='/producto/:nombreParam' element={<Producto />}/> */}
             </Routes>
           </div>
