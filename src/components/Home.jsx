@@ -12,7 +12,7 @@ export default function Home() {
             <Header />
         </header>
         <main>
-            <Content mainText={'EN FORMA COMPLETA PARA LA CANCHA'} subText={'CLÁSICOS SIEMPRE CON ESTILO'} button1={'CLÁSICOS DE HOMBRE'} link1={'#'} button2={'CLÁSICOS DE MUJER'} link2={'#'} />
+            <Content mainText={'EN FORMA COMPLETA PARA LA CANCHA'} subText={'CLÁSICOS SIEMPRE CON ESTILO'} button1={'CLÁSICOS DE HOMBRE'} link1={'/shop/men'} button2={'CLÁSICOS DE MUJER'} link2={'#'} />
             <Announcement />
             <SneakerCard />
             <ImageCollection />
