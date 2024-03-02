@@ -12,7 +12,7 @@ export default function NavBar() {
                 {/* revisar para hacerlo responsive */}
                 <ul className='list-none flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between items-center mb-4 sm:mb-0'>
                     <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400 sm:mx-2'>
-                        <a href="#" className='font-bold'>HOMBRE</a>
+                        <NavLink to="/shop/men" className='font-bold'>HOMBRE</NavLink>
                     </li>
                     <li className='nav-item mx-3 hover:border-b-2 hover:border-gray-400 sm:mx-2'>
                         <a href="#" className='font-bold'>MUJER</a>
