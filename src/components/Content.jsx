@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import ImageTable from "./ImageTable"
 export default function Content({ mainText, subText, button1, link1, button2, link2 }) {
     return (
@@ -11,8 +12,8 @@ export default function Content({ mainText, subText, button1, link1, button2, li
                         {subText}
                     </h2>
                     <div className="flex flex-col text-center justify-center lg:justify-evenly lg:flex-row">
-                        <a href={link1} className="bg-white font-semibold py-2 px-4 my-2 border shadow hover:bg-slate-200">{button1}</a>
-                        <a href={link2} className="bg-white font-semibold py-2 px-4 my-2 border shadow hover:bg-slate-200">{button2}</a>
+                        <NavLink to={link1} className="bg-white font-semibold py-2 px-4 my-2 border shadow hover:bg-slate-200">{button1}</NavLink>
+                        <NavLink to={link2} className="bg-white font-semibold py-2 px-4 my-2 border shadow hover:bg-slate-200">{button2}</NavLink>
                     </div>
                 </div>
                 <ImageTable />
